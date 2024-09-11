@@ -28,3 +28,9 @@ https://trello.com/b/2RsAxn5L/calculator-app
 
 - Build the project: `npm run build`
 - Preview the result: `npm run preview`
+
+## Demo
+
+This project was deployed using Vercel.
+
+https://calculator-phi-ivory.vercel.app/
