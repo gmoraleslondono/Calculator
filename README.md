@@ -1,36 +1,52 @@
-# Calculator
+# Calculator App
 
-This is a Vite + React and Typescript app.
+This is a Vite + React and TypeScript application.
 
 ## Resources
 
-https://www.youtube.com/watch?v=kOLLHTjYYAs
-
-## Trello: Project board
-
-https://trello.com/b/2RsAxn5L/calculator-app
+- [YouTube Tutorial](https://www.youtube.com/watch?v=kOLLHTjYYAs)
+- [Trello: Project Board](https://trello.com/b/2RsAxn5L/calculator-app)
 
 ## How to Use
 
 ### Development
 
-- Start the project: `npm run dev`
+To start the project, run:
+
+```sh
+npm run dev
+```
 
 ### Linting
 
-- Apply ESLint: `npm run lint`
+To apply ESLint, run:
+
+```sh
+npm run lint
+```
 
 ### Type Checking
 
-- Run TypeScript: `npm run typecheck`
+To run TypeScript type checking, use:
+
+```sh
+npm run typecheck
+```
 
 ### Build
 
-- Build the project: `npm run build`
-- Preview the result: `npm run preview`
+To build the project, run:
+
+```sh
+npm run build
+```
+
+To preview the build result, run:
+
+```sh
+npm run preview
+```
 
 ## Demo
 
-This project was deployed using Vercel.
-
-https://calculator-phi-ivory.vercel.app/
+This project was deployed using Vercel. You can view the live demo [here](https://calculator-phi-ivory.vercel.app/).
