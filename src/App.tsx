@@ -15,12 +15,33 @@ function App() {
     setResult(num1 + num2)
   }
 
+  const subtractNumbers = (a:string, b:string) => {
+    const num1 = parseInt(a)
+    const num2 = parseInt(b)
+    setResult(num1 - num2)
+  }
+
+  const multiplyNumbers = (a:string, b:string) => {
+    const num1 = parseInt(a)
+    const num2 = parseInt(b)
+    setResult(num1 * num2)
+  }
+
+  const divideNumbers = (a:string, b:string) => {
+    const num1 = parseInt(a)
+    const num2 = parseInt(b)
+    setResult(num1 / num2)
+  }
+
   return (
     <div className="calculator">
+     <h1>Calculator</h1>
      <Input value={firstInput} onChange={setFirstInput} placeholder="First input"></Input>
-     <h1>+</h1>
      <Input value={secondInput} onChange={setSecondInput} placeholder="Second input"></Input>
-     <Button onClick={() => addNumbers(firstInput, secondInput)} />
+     <Button onClick={() => addNumbers(firstInput, secondInput)} operant="+"/>
+     <Button onClick={() => subtractNumbers(firstInput, secondInput)} operant="-"/>
+     <Button onClick={() => multiplyNumbers(firstInput, secondInput)} operant="x"/>
+     <Button onClick={() => divideNumbers(firstInput, secondInput)} operant="/"/>
      <Screen result={result} />
     </div>
   )
