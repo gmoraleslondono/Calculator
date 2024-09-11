@@ -34,14 +34,16 @@ function App() {
   }
 
   return (
-    <div className="calculator">
-     <h1>Calculator</h1>
+    <div className="w-full lg:w-1/4 md:w-1/3 rounded-xl m-[auto] m-4 p-8 bg-white flex flex-col items-center justify-center ">
+     <h1 className="text-3xl font-bold font-mono mb-8">Calculator</h1>
      <Input value={firstInput} onChange={setFirstInput} placeholder="First input"></Input>
      <Input value={secondInput} onChange={setSecondInput} placeholder="Second input"></Input>
-     <Button onClick={() => addNumbers(firstInput, secondInput)} operant="+"/>
-     <Button onClick={() => subtractNumbers(firstInput, secondInput)} operant="-"/>
-     <Button onClick={() => multiplyNumbers(firstInput, secondInput)} operant="x"/>
-     <Button onClick={() => divideNumbers(firstInput, secondInput)} operant="/"/>
+     <div className="flex flex-row">
+      <Button onClick={() => addNumbers(firstInput, secondInput)} operant="+"/>
+      <Button onClick={() => subtractNumbers(firstInput, secondInput)} operant="-"/>
+      <Button onClick={() => multiplyNumbers(firstInput, secondInput)} operant="x"/>
+      <Button onClick={() => divideNumbers(firstInput, secondInput)} operant="/"/>
+     </div>
      <Screen result={result} />
     </div>
   )
