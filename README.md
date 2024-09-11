@@ -33,6 +33,14 @@ To run TypeScript type checking, use:
 npm run typecheck
 ```
 
+### Formatting
+
+To format the code, run:
+
+```sh
+npm run format
+```
+
 ### Build
 
 To build the project, run:
